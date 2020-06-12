@@ -1,9 +1,9 @@
 body {
-    font-family: "ubuntu", sans-serif;
+    font-family: "Crimson Text", sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a, a:hover {
@@ -89,7 +89,7 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: raleway,sans-serif;
+    font-family: Cabin,sans-serif;
     line-height: 1.2;
     color: #333;
     font-weight: 200;
@@ -273,14 +273,37 @@ pre code {
 
 .recent-posts .posts .post {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.recent-posts .posts .post 
+img {
+  margin: 0px;
+}
+
+.recent-posts .posts .post 
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+}
+
+.recent-posts .posts .post 
+.info .title-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
 .list .posts .post .meta {
-    font-size: 0.725rem;
+    display: flex;
+    flex-direction: row;
     color: #999;
-    margin-bottom: 4px;
 }
 
 .post .post-header {
@@ -301,11 +324,14 @@ pre code {
 }
 
 .post .draft-label {
+    margin-top: 3px;
+    font-size: .75rem;
     color: #a00;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
     margin-left: 6px;
+    margin-right: 6px;
     background-color: #f9f2f4;
 }
 
