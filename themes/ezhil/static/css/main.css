@@ -1,15 +1,9 @@
 body {
-    font-family: "Crimson Text", sans-serif;
+    font-family: "IBM Plex Sans", serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
     font-size: 18px;
-}
-
-a, a:hover {
-    color: #a00;
-    text-decoration: none;
-    word-break: break-word;
 }
 
 html,button,input,select,textarea {
@@ -64,7 +58,7 @@ blockquote {
     margin-left: 1rem;
     font-style: italic;
     font-size: 1.4rem;
-    font-family: Georgia,bitstream charter,serif;
+    font-family: Inconsolata,bitstream charter,serif;
     border-left: 3px solid;
     border-color: #a00;
     padding-left: 20px;
@@ -80,19 +74,17 @@ blockquote em {
 }
 
 a,a:hover {
-    color: #a00;
-    text-decoration: none
-}
-
-a:hover {
-    text-decoration: underline
+    font-family: Inconsolata, sans-serif;
+    font-weight: 900;
+    color: #434c5e;
+    text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: Cabin,sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.2;
     color: #333;
-    font-weight: 200;
+    font-weight: 700;
 }
 
 h1 {
@@ -100,7 +92,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -150,6 +142,14 @@ ul.flat li {
     margin-left: 0;
 }
 
+ul.flat a {
+  color: #d8dee9; 
+}
+
+ul.flat a:hover {
+  color: #4c566a; 
+}
+
 .prevent-collapse {
     min-height: .1rem
 }
@@ -167,8 +167,9 @@ ul {
 }
 
 .site-title a {
-	color: #333;
+	color: #2e3440;
 	text-decoration: none !important;
+  font-size: 25px;
 }
 
 .post ul li {
@@ -207,7 +208,6 @@ pre code {
 
 .header {
     margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 
 .header h1,
@@ -223,13 +223,25 @@ pre code {
 }
 
 .header nav {
-    margin-top: 20px;
-    border-top: 1px solid #f4f4f4;
+    margin-top: 5px;
+    border-top: 1px solid #d8dee9;
 }
 
 .header nav ul,
 .header nav li {
     margin: 0;
+}
+
+.header nav a.active {
+  color: #2e3440;
+}
+
+.header nav a.inactive {
+  color: #d8dee9;
+}
+
+.header nav a.inactive:hover {
+  color: #2e3440;
 }
 
 .header nav ul.flat {
@@ -243,6 +255,12 @@ pre code {
     margin-right: 10px;
     margin-top: 10px;
     text-transform: capitalize;
+}
+
+.header .title-description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .header .site-description {
@@ -263,10 +281,11 @@ pre code {
 }
 
 .section .section-header {
-    font-size: 0.75rem;
+    font-family: Inconsolata, sans-serif;
+    font-size: 1.35rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #999;
+    color: #2e3440;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -298,12 +317,32 @@ img {
     justify-content: space-between;
 }
 
+.recent-posts .posts .post 
+.info .title-date a {
+  font-family: Inconsolata,sans-serif; 
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #2e3440;
+}
+
+.recent-posts .posts .post 
+.info .title-date a:hover {
+  font-family: Inconsolata,sans-serif; 
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #4c566a;
+  text-decoration: underline;
+}
+
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
 .list .posts .post .meta {
     display: flex;
     flex-direction: row;
-    color: #999;
+    color: #d8dee9;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
 }
 
 .post .post-header {
@@ -326,13 +365,14 @@ img {
 .post .draft-label {
     margin-top: 3px;
     font-size: .75rem;
-    color: #a00;
+    color: #4c566a;
     text-decoration: none;
-    padding: 2px 4px;
+    padding: 1px 6px;
     border-radius: 4px;
     margin-left: 6px;
     margin-right: 6px;
-    background-color: #f9f2f4;
+    background-color: #d8dee9;
+    line-height: 1.8;
 }
 
 .post-tags .tags li {
@@ -360,10 +400,20 @@ img {
 .footer {
     text-align: right;
     font-size: 0.75em;
-    color: #999;
-    border-top: 1px solid #f4f4f4;
+    color: #d8dee9;
+    border-top: 1px solid #d8dee9;
     padding: 20px 0;
     margin-top: 40px;
+}
+
+.footer nav a {
+  color: #d8dee9;
+  text-decoration: underline;
+}
+
+.footer nav a:hover {
+  color: #4c566a;
+  text-decoration: underline;
 }
 
 .page-title {

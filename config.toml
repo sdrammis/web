@@ -22,9 +22,6 @@ paginate = 3
 summaryLength = 20
 
 [params]
-    # Blog subtitle which appears below blog title. Supports markdown.
-    subtitle = "TODO my blog subtitle"
-
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
 
@@ -55,22 +52,22 @@ summaryLength = 20
 
 # Main menu which appears below site header.
 [[menu.main]]
-name = "Home"
+name = "home"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Blog Posts"
+name = "posts"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Reading"
+name = "reading"
 url = "/reading"
 weight = 3
 
 [[menu.main]]
-name = "Listening"
+name = "listening"
 url = "/listening"
 weight = 4
 

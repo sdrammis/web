@@ -1,15 +1,11 @@
 <head>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Crimson+Text|Cabin">
+    href="https://fonts.googleapis.com/css?family=Inconsolata|IBM+Plex+Sans">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
-	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
-	{{- else -}}
-	<title>{{ $title }} - {{ $siteTitle }}</title>
-	{{- end -}}
+	<title>{{ $siteTitle }}</title>
 
 	{{- if isset .Site.Params "favicon" -}}
 	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
