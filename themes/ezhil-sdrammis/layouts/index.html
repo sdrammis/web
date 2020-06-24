@@ -20,7 +20,7 @@
 				{{ range $paginator.Pages }}
 				<div class="post">
           {{ if .Params.thumbnail }}
-            <img src='{{ absURL (printf "images/%s" .Params.thumbnail) }}' alt='' width=80 height=80>
+            <img src='{{ absURL (printf "imgs/%s" .Params.thumbnail) }}' alt='' width=80 height=80>
           {{ end }}
 
           <div class="info">

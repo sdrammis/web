@@ -73,11 +73,18 @@ blockquote em {
     font-weight: 600;
 }
 
-a,a:hover {
-    font-family: Inconsolata, sans-serif;
-    font-weight: 900;
-    color: #434c5e;
-    text-decoration: none;
+a {
+  font-family: Inconsolata, sans-serif;
+  font-weight: 900;
+  color: #81a1c1;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: Inconsolata, sans-serif;
+  font-weight: 900;
+  color: #81a1c1;
+  text-decoration: underline;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -147,7 +154,7 @@ ul.flat a {
 }
 
 ul.flat a:hover {
-  color: #4c566a; 
+  color: #81a1c1; 
 }
 
 .prevent-collapse {
@@ -242,6 +249,7 @@ pre code {
 
 .header nav a.inactive:hover {
   color: #2e3440;
+  text-decoration: none;
 }
 
 .header nav ul.flat {
@@ -346,7 +354,7 @@ img {
   font-family: Inconsolata,sans-serif; 
   font-size: 1.5rem;
   line-height: 1;
-  color: #4c566a;
+  color: #2e3440;
   text-decoration: underline;
 }
 
@@ -368,6 +376,7 @@ img {
 }
 
 .post .post-header h1 {
+  color: #2e3440;
   font-size: 26px;
 }
 
@@ -375,12 +384,12 @@ img {
     margin: 0;
 }
 
-.title {
+.title-date .title {
   font-family: Inconsolata,sans-serif; 
   color: #2e3440;
 } 
 
-.title:hover {
+.title-date .title:hover {
   font-family: Inconsolata,sans-serif; 
   color: #2e3440;
   text-decoration: underline;
