@@ -290,6 +290,22 @@ pre code {
     letter-spacing: 1px;
 }
 
+.posts {
+  display: flex
+  flex-direction: row;
+}
+
+.posts .post {
+    margin-bottom: 20px;
+}
+
+.posts .post .title-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
 .recent-posts .posts .post {
     margin-bottom: 30px;
     display: flex;
@@ -336,7 +352,8 @@ img {
 
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
-.list .posts .post .meta {
+.list .posts .post .meta,
+.posts .post .title-date .meta {
     display: flex;
     flex-direction: row;
     color: #d8dee9;
@@ -356,6 +373,17 @@ img {
 
 .post .post-header .title {
     margin: 0;
+}
+
+.title {
+  font-family: Inconsolata,sans-serif; 
+  color: #2e3440;
+} 
+
+.title:hover {
+  font-family: Inconsolata,sans-serif; 
+  color: #2e3440;
+  text-decoration: underline;
 }
 
 .post-tags a {
@@ -495,4 +523,20 @@ table th, table td {
     .container {
         margin-top: 10px;
     }
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favorites-list .listing-year {
+  flex-basis: 50%;
+}
+
+.favorites-list .listing-year .year {
+    font-family: Inconsolata, sans-serif;
+    font-weight: 900;
+    color: #434c5e;
+    font-size: 22px;
 }

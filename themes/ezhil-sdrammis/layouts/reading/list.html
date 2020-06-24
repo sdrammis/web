@@ -8,13 +8,13 @@
 
 		{{ with .Content }}{{ . }}{{ end }}
 
-		<div style="display:flex;justify-content:space-around">
+		<div class="favorites-list">
 			{{- range .Data.Pages -}}
 			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
 			{{- else -}}
-			<div class="post">
-        <h2> {{.Title}} </h2>
-        <p> {{ .Content }} </p>
+			<div class="listing-year">
+        <div class="year"> {{.Title}} </div>
+        <div class="content"> {{ .Content }} </div>
 			</div>
 			{{- end -}}
 			{{- end -}}
