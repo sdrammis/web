@@ -8,7 +8,7 @@
 
 		{{ with .Content }}{{ . }}{{ end }}
 
-		<div class="favorites-list">
+		<div class="favorites-list-col">
 			{{- range .Data.Pages -}}
 			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
 			{{- else -}}

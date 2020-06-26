@@ -539,13 +539,29 @@ table th, table td {
   flex-wrap: wrap;
 }
 
+.favorites-list-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-list img {
+  margin: 0px;
+}
+
 .favorites-list .listing-year {
   flex-basis: 50%;
 }
 
-.favorites-list .listing-year .year {
+.year {
     font-family: Inconsolata, sans-serif;
     font-weight: 900;
     color: #434c5e;
     font-size: 22px;
+}
+
+.title {
+  font-family: Inconsolata, sans-serif;
+  font-weight: 900;
+  color: #434c5e;
+  font-size: 22px;
 }

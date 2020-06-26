@@ -14,6 +14,10 @@
 				Recent posts
 			</h2>
 
+      <p>
+        ... nothing here yet ...
+      </p>
+
 			<div class="posts">
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
