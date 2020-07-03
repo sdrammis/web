@@ -6,6 +6,14 @@ thumbnail: "notion.jpeg"
 draft: true
 ---
 
+# Header 1
+
+## Sub-header 1
+
+# Header 2
+
+*bold*
+
 Here is my first post.
 
 Hello and welcome!

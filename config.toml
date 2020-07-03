@@ -86,3 +86,10 @@ url = "https://twitter.com/sdrammis"
 # Enable tags.
 [taxonomies]
    tag = "tags"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+
