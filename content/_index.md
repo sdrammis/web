@@ -1,5 +1,5 @@
 Hi, I'm Sabrina. 
-I'm an entering graduate student at MIT EECS. 
+I'm first year graduate student at MIT EECS. 
 My research interests are in understanding circuit level neural computation. 
 You can reach me at <sdrammis@mit.edu>.
 

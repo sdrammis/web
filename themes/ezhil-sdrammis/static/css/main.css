@@ -3,11 +3,15 @@ body {
     font-weight: 400;
     color: #333;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 html,button,input,select,textarea {
     color: #333;
+}
+
+p {
+  color: #000
 }
 
 ::-moz-selection {
@@ -76,14 +80,14 @@ blockquote em {
 a {
   font-family: Inconsolata, sans-serif;
   font-weight: 900;
-  color: #81a1c1;
+  color: #059bd7;
   text-decoration: none;
 }
 
 a:hover {
   font-family: Inconsolata, sans-serif;
   font-weight: 900;
-  color: #81a1c1;
+  color: #059bd7;
   text-decoration: underline;
 }
 
@@ -150,11 +154,11 @@ ul.flat li {
 }
 
 ul.flat a {
-  color: #d8dee9; 
+  color: #b7c2c6; 
 }
 
 ul.flat a:hover {
-  color: #81a1c1; 
+  color: #059bd7; 
 }
 
 .prevent-collapse {
@@ -174,9 +178,9 @@ ul {
 }
 
 .site-title a {
-	color: #2e3440;
+	color: #000;
 	text-decoration: none !important;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .post ul li p {
@@ -211,6 +215,9 @@ pre code {
 
 .header {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b7c2c6;
 }
 
 .header h1,
@@ -226,8 +233,8 @@ pre code {
 }
 
 .header nav {
-    margin-top: 5px;
-    border-top: 1px solid #d8dee9;
+    margin-top: 2px;
+    font-size: 18px;
 }
 
 .header nav ul,
@@ -236,15 +243,15 @@ pre code {
 }
 
 .header nav a.active {
-  color: #2e3440;
+  color: #000;
 }
 
 .header nav a.inactive {
-  color: #d8dee9;
+  color: #b7c2c6;
 }
 
 .header nav a.inactive:hover {
-  color: #2e3440;
+  color: #000;
   text-decoration: none;
 }
 
@@ -259,12 +266,6 @@ pre code {
     margin-right: 10px;
     margin-top: 10px;
     text-transform: capitalize;
-}
-
-.header .title-description {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
 }
 
 .header .site-description {
@@ -288,9 +289,8 @@ pre code {
     font-family: Inconsolata, sans-serif;
     font-size: 1.35rem;
     font-weight: 600;
-    text-transform: uppercase;
-    color: #2e3440;
-    margin-bottom: 20px;
+    color: #000;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
@@ -342,7 +342,7 @@ img {
   font-family: Inconsolata,sans-serif; 
   font-size: 1.5rem;
   line-height: 1;
-  color: #2e3440;
+  color: #000;
 }
 
 .recent-posts .posts .post 
@@ -350,7 +350,7 @@ img {
   font-family: Inconsolata,sans-serif; 
   font-size: 1.5rem;
   line-height: 1;
-  color: #2e3440;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -360,7 +360,7 @@ img {
 .posts .post .title-date .meta {
     display: flex;
     flex-direction: row;
-    color: #d8dee9;
+    color: #b7c2c6;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: .8rem;
     font-weight: bold;
@@ -372,7 +372,7 @@ img {
 }
 
 .post .post-header h1 {
-  color: #2e3440;
+  color: #000;
   font-size: 26px;
 }
 
@@ -382,12 +382,12 @@ img {
 
 .title-date .title {
   font-family: Inconsolata,sans-serif; 
-  color: #2e3440;
+  color: #000;
 } 
 
 .title-date .title:hover {
   font-family: Inconsolata,sans-serif; 
-  color: #2e3440;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -410,7 +410,7 @@ img {
     border-radius: 4px;
     margin-left: 6px;
     margin-right: 6px;
-    background-color: #d8dee9;
+    background-color: #b7c2c6;
     line-height: 1.8;
 }
 
@@ -439,14 +439,14 @@ img {
 .footer {
     text-align: right;
     font-size: 0.75em;
-    color: #d8dee9;
-    border-top: 1px solid #d8dee9;
+    color: #ddd;
+    border-top: 1px solid #b7c2c6;
     padding: 20px 0;
     margin-top: 40px;
 }
 
 .footer nav a {
-  color: #d8dee9;
+  color: #ddd;
   text-decoration: underline;
 }
 
@@ -551,13 +551,14 @@ table th, table td {
 .year {
     font-family: Inconsolata, sans-serif;
     font-weight: 900;
-    color: #434c5e;
+    color: #000;
     font-size: 22px;
+    font-size: 18px;
 }
 
 .title {
   font-family: Inconsolata, sans-serif;
   font-weight: 900;
-  color: #434c5e;
+  color: #000;
   font-size: 22px;
 }
