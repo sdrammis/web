@@ -9,52 +9,27 @@
       {{ with .Content }}{{ . }}{{ end }}
     </div>
 
-		<div class="recent-posts section">
+		<div class="publications section">
+
 			<h2 class="section-header">
-				Recent Posts
+				Publications
 			</h2>
 
-      <p>
-      coming soon ...
-      </p>
-
-			<div class="posts">
-				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-				{{ range $paginator.Pages }}
-				<div class="post">
-          {{ if .Params.thumbnail }}
-            <img src='{{ absURL (printf "imgs/%s" .Params.thumbnail) }}' alt='' width=80 height=80>
-          {{ end }}
-
-          <div class="info">
-            <div class="title-date">
-              <a class="title" href="{{ .RelPermalink }}">
-                {{.Title}}
-              </a>
-              <div class="meta">
-                {{ if .Draft }} 
-                  <span class="draft-label">DRAFT</span> 
-                {{ end }}
-                <div class="date">
-                  {{ dateFormat "JAN 2, 2006" .Date }}
-                  ⚫
-                  {{ .ReadingTime }} MIN. READ
-                </div>
-              </div>
+        {{ range where .Site.RegularPages "Type" "publications" }}
+        <div class="publication">
+          <div class="publication-title"> {{ .Title }} </div>
+          <div> {{ .Params.authors }} </div>
+          <div class="pub-bar">
+            <div class="pub-links">
+              [<a href="/pdfs/pubs/{{ .Params.pdf }}">pdf</a>]
+              [<a href="{{ .Params.news }}">press</a>]
             </div>
-            <span class="description">
-              {{ if isset .Params "description" }}
-              {{ .Description }}
-              {{ else }}
-              {{ .Summary }}&hellip;
-              {{ end }}
-            </span>
+            <em>Cell 2020</em>
           </div>
 
-				</div>
-				{{ end }}
-			</div>
+        </div>
+        {{ end }}
+
 		</div>
 	</div>
 	</div>

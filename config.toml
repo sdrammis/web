@@ -22,9 +22,6 @@ paginate = 3
 summaryLength = 20
 
 [params]
-    # Content types which are included in home page recent posts list.
-    mainSections = ["posts"]
-
     # Content types which are excludes Disqus comments.
     disableDisqusTypes = ["page"]
 
