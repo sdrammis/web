@@ -1,7 +1,7 @@
-Hi, I'm Sabrina. 
-I'm first year graduate student at MIT EECS. 
-My research interests are in understanding circuit level neural computation. 
+Hi, I'm Sabrina Drammis. 
+I'm a graduate student at MIT EECS advised by Nancy
+Lynch. 
+My research interests are in understanding systems level neural
+computation for cognitive function. 
 You can reach me at <sdrammis@mit.edu>.
-
-See a list of some of my favorite albums [here]({{<ref "albums" >}}).
 

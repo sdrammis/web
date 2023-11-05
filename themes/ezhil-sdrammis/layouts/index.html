@@ -11,25 +11,28 @@
 
 		<div class="publications section">
 
-			<h2 class="section-header">
+			<h2 class="section-header", style="padding-top: 20px">
 				Publications
 			</h2>
-
-        {{ range where .Site.RegularPages "Type" "publications" }}
-        <div class="publication">
+        {{ range sort (where .Site.RegularPages "Type" "publications") ".Params.year" "desc" }}
+        <div class="publication", style="padding-top: 15px;">
           <div class="publication-title"> {{ .Title }} </div>
           <div> {{ .Params.authors }} </div>
           <div class="pub-bar">
-            <div class="pub-links">
-              [<a href="/pdfs/pubs/{{ .Params.pdf }}">pdf</a>]
-              [<a href="{{ .Params.news }}">press</a>]
-            </div>
-            <em>Cell 2020</em>
+              <div class="pub-links">
+                {{ if isset .Params "pdf" }}
+                  <a href="/pdfs/pubs/{{ .Params.pdf }}">[pdf]</a>
+                {{ else }}
+                  (to appear)
+                {{ end }}
+                {{ if isset .Params "news" }}
+                    <a href="{{ .Params.news }}">[press]</a>
+                {{ end }}
+              </div>
+            <em>{{ .Params.journal }} {{ .Params.year }}</em>
           </div>
-
         </div>
         {{ end }}
-
 		</div>
 	</div>
 	</div>
