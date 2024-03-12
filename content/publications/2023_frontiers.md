@@ -4,5 +4,5 @@ authors = "Bin A. Wang, Sabrina Drammis, Ali Hummos, Michael M Halassa, Burkhard
 thumbnail = "notion.jpeg"
 journal = "Frontiers in Neuroscience"
 year = "2023"
-to_appear = "True"
+pdf = "FiN_Wang_2023_Modulation.pdf"
 +++

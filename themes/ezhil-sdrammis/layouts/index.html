@@ -22,6 +22,8 @@
               <div class="pub-links">
                 {{ if isset .Params "pdf" }}
                   <a href="/pdfs/pubs/{{ .Params.pdf }}">[pdf]</a>
+                {{ else if isset .Params "arxiv" }}
+                    <a href="{{ .Params.arxiv }}">[arXiv]</a>
                 {{ else }}
                   (to appear)
                 {{ end }}
